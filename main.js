@@ -11,27 +11,6 @@ wylosKat = kategoria[Math.floor(Math.random()*Number(kategoria.length))];
 let y = wylosKat.length;
 wylosPrzysl = wylosKat[Math.floor(Math.random()*Number(wylosKat.length))]
 
-// console.log('Wylosowana kategoria: ' + wylosKat);
-// console.log('Długość tablicy x = ' + x);
-// console.log('Wylosowany numer tablicy: ' + wylosPrzysl);
-// console.log('Długość tablicy y = ' + y);
-
-
-// window.addEventListener("load", (event) => {         // wyświetlanie  podpowiedzi
-//     if (wylosKat == przyslowia) {
-//         document.getElementById('podpowiedz').innerHTML = '<p>Kategoria przysłowia polskie</p>';
-//     }
-//     else if (wylosKat == film) {
-//         document.getElementById('podpowiedz').innerHTML = '<p>Kategoria film polski</p>';
-//     }
-//     else if (wylosKat == noblisci) {
-//         document.getElementById('podpowiedz').innerHTML = '<p>Kategoria polski noblista</p>';
-//     }
-//     else if (wylosKat == dania) {
-//         document.getElementById('podpowiedz').innerHTML = '<p>Kategoria polskie dania</p>';
-//     }
-// });
-
 
 function kat() {         // wyświetlanie podpowiedzi, wywołane poniżej w funkcji window.onload
     if (wylosKat == przyslowia) {
@@ -48,12 +27,9 @@ function kat() {         // wyświetlanie podpowiedzi, wywołane poniżej w funk
     }
 };
 
-
-
 let haslo = wylosPrzysl;
 haslo = haslo.toUpperCase(); // zmiana wielkosci liter na duze
 console.log('Wylosowane hasło: ' + haslo);
-
 
 let dlugosc = haslo.length; // wlasciwosc lancucha, pobiera dlugosc hasla
 let ile_skuch = 0;
