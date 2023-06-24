@@ -1,11 +1,12 @@
 
 const przyslowia = ['nie ma róży bez kolca', 'baba z wozu koniom lżej', 'chytry dwa razy traci', 'gdzie dwóch się bije tam trzeci korzysta', 'chlebem i solą ludzie ludzi niewolą', 'ani kura za darmo nie gdacze', 'z dużej chmury mały deszcz'];
-const film = ['dzień świra', 'kiler', 'jak rozpętałem drugą wojnę światową', 'sami swoi', 'chłopaki nie płaczą', 'vabank'];
+const film = ['dzień świra', 'kiler', 'jak rozpętałem drugą wojnę światową', 'sami swoi', 'chłopaki nie płaczą', 'vabank', 'noce i dnie', 'młode wilki', 'u pana boga za piecem'];
 const noblisci = ['Maria Skłodowska', 'Henryk Sienkiewicz', 'Czesław Miłosz', 'Lech Wałęsa', 'Wisława Szymborska', 'Olga Tokarczuk'];
-const dania = ['kotlet schabowy', 'galareta mięsna', 'barszcz czerwony', 'zupa pomidorowa', 'kotlet mielony', 'bigos'];
+const dania = ['kotlet schabowy', 'galareta mięsna', 'barszcz czerwony', 'zupa pomidorowa', 'kotlet mielony', 'bigos', 'gołąbki', 'chłodnik', 'golonka'];
+const deser = ['faworki', 'sernik', 'babka', 'makowiec', 'sernik', 'pączki'];
 
 
-let kategoria = [przyslowia, film, noblisci, dania];
+let kategoria = [przyslowia, film, noblisci, dania, deser];
 let x = kategoria.length;
 wylosKat = kategoria[Math.floor(Math.random()*Number(kategoria.length))];
 let y = wylosKat.length;
@@ -24,6 +25,9 @@ function kat() {         // wyświetlanie podpowiedzi, wywołane poniżej w funk
     }
     else if (wylosKat == dania) {
         document.getElementById('podpowiedz').innerHTML = '<p>Kategoria polskie dania</p>';
+    }
+     else if (wylosKat == deser) {
+        document.getElementById('podpowiedz').innerHTML = '<p>Kategoria polski deser</p>';
     }
 };
 
